@@ -1,0 +1,844 @@
+.el-message {
+    border-color: #FFF;
+    background-color: #FFF;
+    box-shadow: 0 3px 6px -4px #0000001F, 0 6px 16px #00000014, 0 9px 28px 8px #0000000D;
+    .el-message__content {
+        color: #000000D9 !important;
+    }
+}
+
+.el-notification {
+    align-items: center;
+    border-color: #FFF;
+    border-radius: 4px !important;
+    background-color: #FFF;
+    box-shadow: 0 3px 6px -4px #0000001F, 0 6px 16px #00000014, 0 9px 28px 8px #0000000D;
+    .el-notification__title {
+        padding: 0;
+    }
+    .el-notification__closeBtn {
+        font-weight: bold;
+    }
+    .el-notification__content {
+        margin-top: 0;
+        color: #000000D9 !important;
+    }
+}
+
+.el-form-item {
+    margin-bottom: 24px;
+}
+
+.el-form .el-form-item__label {
+    font-size: 14px;
+    font-weight: 400;
+    padding-right: 10px;
+    text-align: right;
+    color: #131416;
+}
+
+.el-form.el-form--label-top {
+    .el-form-item__label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #131416;
+    }
+}
+
+.el-checkbox {
+    .el-checkbox__inner {
+        width: 16px;
+        height: 16px;
+        &:after {
+            top: 2px !important;
+            left: 5px !important;
+        }
+    }
+    .el-checkbox__label {
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 12px;
+        text-align: left;
+    }
+}
+
+.el-button {
+    font-weight: 400;
+    //> span {
+    //  margin-left: 4px !important;
+    //}
+}
+
+.el-button.el-button--primary.is-plain {
+    border: 1px solid #148FFF !important;
+    background-color: #FFF;
+    &:hover {
+        color: #148FFF;
+        border: 1px solid #148FFF;
+        background: #ECF2FF;
+    }
+    &:active {
+        color: #148FFF;
+    }
+}
+
+.el-button.el-button--default {
+    /*&:hover {
+background: #FFF;
+border: 1px solid #148FFF;
+color: #148FFF;
+}*/
+}
+
+.el-table__body {
+    .cell {
+        font-size: 14px;
+        line-height: 18px !important;
+    }
+}
+
+.el-table__header {
+    tr>th {
+        padding: 15px 0;
+        .cell {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px !important;
+            color: #313442;
+        }
+    }
+}
+
+.el-tabs__header {
+    margin-bottom: 0;
+}
+
+.el-tabs__content {
+    padding: 0;
+}
+
+.el-tabs--card {
+    .el-tabs__item {
+        font-weight: 400;
+        color: #64666D;
+        background-color: #F0F2F5;
+    }
+    .el-tabs__item.is-active {
+        font-weight: 500 !important;
+        color: #148FFF !important;
+        background-color: #FFF;
+    }
+    .el-tabs__nav {
+        border: 1px solid #D7D9E0;
+    }
+}
+
+.el-tabs__header.is-left {
+    margin-right: 1px !important;
+    .el-tabs__active-bar.is-left {
+        right: 1px !important;
+        width: 3px !important;
+        height: 30px !important;
+    }
+    .el-tabs__item.is-left {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 30px !important;
+        height: 38px !important;
+        padding: 0 22px 8px !important;
+        color: #64666D !important;
+        &.is-active {
+            font-size: 14px !important;
+            font-weight: 500 !important;
+            color: #148FFF !important;
+        }
+        &::last-of-type {
+            padding-bottom: 0 !important;
+        }
+        &.is-focus {
+            box-shadow: none !important;
+        }
+    }
+    .el-tabs__nav-wrap.is-left {
+        &:after {
+            width: 1px !important;
+            background-color: #E4E8ED !important;
+        }
+    }
+}
+
+.el-table--medium tbody td,
+.el-table--medium tbody th {
+    padding: 18px 0;
+}
+
+.el-image-viewer__wrapper {
+    z-index: 3001 !important;
+}
+
+.el-upload__tip {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-top: 12px;
+    text-align: left;
+    color: #78838C;
+}
+
+.el-button--primary.is-plain:focus,
+.el-button--primary.is-plain:hover {
+    color: #148FFF !important;
+}
+
+.queryForm {
+    padding: 20px 20px 4px 20px;
+    background: #F7F8FA;
+    .el-form-item {
+        display: flex;
+        &__content {
+            flex: 1;
+            //font-size: 0;
+        }
+    }
+    .el-form-item {
+        margin-right: 24px;
+        margin-bottom: 16px;
+        .el-form-item__label {
+            font-size: 14px;
+            font-weight: 400;
+            text-align: right;
+        }
+    }
+    .el-checkbox {
+        height: 33px;
+        margin-right: 16px;
+    }
+}
+
+.vue-treeselect {
+    &--disabled {
+        .vue-treeselect__control {
+            line-height: 36px !important;
+            height: 36px !important;
+        }
+    }
+    .vue-treeselect__limit-tip-text {
+        font-weight: 400;
+        line-height: 20px;
+    }
+    &__control {
+        line-height: 34px !important;
+        height: 34px !important;
+        margin-bottom: 0 !important;
+        padding: 0 10px !important;
+        border-color: #EBEEF5 !important;
+    }
+    &__menu {
+        border-color: #EBEEF5 !important;
+    }
+    &__minus-mark,
+    &__check-mark {
+        top: 3px !important;
+        left: 3px !important;
+    }
+    &__label {
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+    }
+    &__multi-value {
+        &-item {
+            font-size: 14px !important;
+            line-height: 20px !important;
+            width: 100px !important;
+            color: #FFF !important;
+            background: #148FFF !important;
+            .vue-treeselect__multi-value-label {
+                display: inline-block;
+                overflow: hidden;
+                width: inherit;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+            .vue-treeselect__value-remove {
+                color: #FFF !important;
+                &:hover {
+                    color: #FFF !important;
+                }
+            }
+        }
+    }
+    &__checkbox {
+        width: 16px !important;
+        height: 16px !important;
+        &--unchecked {
+            border-color: #CCC !important;
+        }
+        &--indeterminate {
+            border-color: #148FFF !important;
+            background-color: #148FFF !important;
+        }
+        &--checked {
+            border-color: #148FFF !important;
+            background-color: #148FFF !important;
+        }
+    }
+    &__option {
+        line-height: 36px;
+        &:hover {
+            background-color: #F2F5FC !important;
+        }
+    }
+}
+
+.thumbnail {
+    &.img {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+        background-color: #FFF;
+    }
+    &.no-avatar {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+        background: url('~@/assets/icons/icon_default_avatar.jpg');
+        background-size: cover;
+    }
+    &.no-machinery-pic {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+        background: url('~@/assets/icons/icon_default_machine.jpg');
+        background-size: cover;
+    }
+    &.no-pic {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+        background: url('~@/assets/icons/default.jpg');
+        background-size: cover;
+    }
+}
+
+.tableList {
+    margin-top: 24px;
+    >.el-table__fixed-right {
+        box-shadow: none;
+        .el-table__fixed-header-wrapper {
+            tr th {
+                border-left: 1px solid #EEE;
+            }
+            .cell {
+                padding-right: 10px;
+                text-align: right;
+            }
+        }
+    }
+    >.el-table__fixed {
+        box-shadow: none;
+        .el-table__fixed-header-wrapper {
+            tr th {
+                border-right: 1px solid #EEE;
+            }
+            .cell {
+                padding-left: 10px;
+                text-align: left;
+            }
+        }
+    }
+    //默认头像
+    .no-avatar-pic {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+        background: url('~@/assets/icons/icon_no_avatar.jpg');
+        background-size: cover;
+    }
+    //默认机械图片
+    .no-machinery-pic {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+        background: url('~@/assets/icons/icon_default_machine.jpg');
+        background-size: cover;
+    }
+    //图片样式
+    .img {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+        background-color: #FFF;
+    }
+    .el-table .cell {
+        line-height: 14px;
+    }
+    .thumbnail {
+        width: 68px;
+        height: 68px;
+        border-radius: 4px;
+    }
+    .icon {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+.el-input,
+.el-select,
+.el-date-editor,
+.el-cascader,
+.el-textarea {
+    width: 100%;
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+    width: 140px;
+    padding: 0;
+    background-color: #FFF;
+    .el-select {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__inner {
+    width: 100%;
+}
+
+.el-input-number {
+    width: 100%;
+    .el-input__inner {
+        text-align: left;
+    }
+}
+
+.dialog {
+    .el-dialog {
+        border-radius: 4px;
+    }
+    .el-dialog__header {
+        padding: 16px 20px;
+        border-radius: 4px 4px 0 0;
+        background: #F2F5FC;
+        .el-dialog__title {
+            font-size: 16px;
+            line-height: 16px;
+            text-align: left;
+            color: #313442;
+        }
+        .el-dialog__headerbtn {
+            top: 16px;
+            i {
+                font-weight: bold;
+            }
+        }
+    }
+    .el-dialog__body {
+        overflow-y: auto;
+        max-height: 600px;
+        padding: 32px 32px 0;
+    }
+    .el-dialog__footer {
+        padding: 20px 32px;
+    }
+}
+
+.el-button {
+    span {
+        margin-left: 0 !important;
+    }
+}
+
+.el-radio.is-bordered {
+    margin-right: 0;
+    padding: 10px 20px 0 10px !important;
+    border-color: #D7D9E0;
+    .el-radio__label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        color: #131416;
+    }
+    &.is-checked {
+        .el-radio__label {
+            color: #148FFF;
+        }
+        .el-radio__inner {
+            width: 16px;
+            height: 16px;
+            background-color: #FFF;
+            &:after {
+                width: 10px;
+                height: 10px;
+                background-color: #148FFF;
+            }
+        }
+    }
+}
+
+.el-tooltip__popper.is-light {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: left;
+    color: #FFF;
+    border: none !important;
+    border-radius: 4px;
+    background: #148FFF !important;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+    .popper__arrow {
+        border-top-color: #148FFF !important;
+        &:after {
+            border-top-color: #148FFF !important;
+        }
+    }
+}
+
+.el-message-box {
+    width: 354px;
+    padding-bottom: 0;
+    .el-message-box__headerbtn {
+        top: 14px;
+        i {
+            font-weight: bold;
+        }
+    }
+    .el-message-box__status {
+        color: #FFBA01;
+    }
+    .el-message-box__message {
+        font-size: 14px;
+        line-height: 20px;
+        text-align: left;
+        color: #313442;
+    }
+    .el-message-box__header {
+        padding: 36px 16px 0;
+    }
+    .el-message-box__content {
+        padding: 0 20px 0 28px;
+    }
+    .el-message-box__btns {
+        padding: 28px 20px 20px;
+    }
+}
+
+.el-checkbox__input.is-indeterminate .el-checkbox__inner::before {
+    top: 6px;
+    height: 3px;
+}
+
+.el-checkbox.is-checked {
+    .el-checkbox__inner {
+        border: 1px solid #148FFF;
+    }
+    .el-checkbox__inner::after {
+        border: 2px solid #FFF;
+        border-top: 0;
+        border-left: 0;
+    }
+}
+
+.el-form-item.is-required:not(.is-no-asterisk) .el-form-item__label-wrap>.el-form-item__label:before,
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before {
+    margin-right: 0;
+}
+
+.form-info {
+    .el-form-item {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        margin: 0;
+        padding: 16px 0;
+        border-bottom: 1px solid #F0F2F5;
+        .el-form-item__label {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+            flex-shrink: 0;
+            width: 200px;
+            text-align: left;
+            color: #4F637C;
+        }
+        .el-form-item__content {
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            color: #131416;
+        }
+    }
+}
+
+.submit-form {
+    &.detail {
+        .el-form-item {
+            margin-bottom: 16px;
+            .el-form-item__label {
+                font-size: 14px;
+            }
+        }
+    }
+    .info {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+        color: #313442;
+    }
+    .el-form-item {
+        margin-bottom: 28px;
+        .el-form-item__error {
+            padding-top: 2px;
+        }
+    }
+}
+
+.detail-info {
+    margin-bottom: 24px;
+    padding: 16px;
+    border-radius: 4px;
+    background: #FFF;
+    .title {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-bottom: 16px;
+        text-align: left;
+        color: #7488A1;
+    }
+    .no-img {
+        width: 220px;
+        height: 140px;
+    }
+    .card-pic {
+        overflow: hidden;
+        width: 220px;
+        height: 140px;
+        margin-bottom: 64px;
+        border: 1px solid #D7D9E0;
+        border-radius: 4px;
+    }
+    .square-pic {
+        overflow: hidden;
+        width: 140px;
+        height: 140px;
+        margin-bottom: 64px;
+        border: 1px solid #D7D9E0;
+        border-radius: 4px;
+    }
+    .table-list {
+        margin-bottom: 44px;
+        .table-row-label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+            padding: 17px 24px;
+            text-align: left;
+            color: #313442;
+            background: #F0F2F5;
+        }
+        .table-row-value {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            padding: 15px 24px;
+            text-align: left;
+            color: #313442;
+        }
+    }
+}
+
+.tree-select {
+    .checked {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-top: 10px;
+        text-align: left;
+        color: #148FFF;
+    }
+    .tree {
+        overflow-y: scroll;
+        height: 500px;
+        margin-top: 10px;
+        .el-tree-node__content {
+            height: 36px;
+        }
+        .el-tree-node__label {
+            color: #333;
+        }
+    }
+    .tag-list {
+        padding: 10px 0;
+    }
+}
+
+.components-container {
+    position: relative;
+    margin: 30px 50px;
+}
+
+.pagination-container {
+    //margin-top: 30px;
+}
+
+.text-center {
+    text-align: center
+}
+
+.sub-navbar {
+    line-height: 50px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    padding-right: 20px;
+    transition: 600ms ease position;
+    text-align: right;
+    background: linear-gradient(90deg, rgba(32, 182, 249, 1) 0%, rgba(32, 182, 249, 1) 0%, rgba(33, 120, 241, 1) 100%, rgba(33, 120, 241, 1) 100%);
+    .subtitle {
+        font-size: 20px;
+        color: #FFF;
+    }
+    &.draft {
+        background: #D0D0D0;
+    }
+    &.deleted {
+        background: #D0D0D0;
+    }
+}
+
+.link-type,
+.link-type:focus {
+    cursor: pointer;
+    color: #148FFF;
+    &:hover {
+        color: #43A5FF;
+    }
+}
+
+.filter-container {
+    padding-bottom: 10px;
+    .filter-item {
+        display: inline-block;
+        margin-bottom: 10px;
+        vertical-align: middle;
+    }
+}
+
+//refine vue-multiselect plugin
+.multiselect {
+    line-height: 16px;
+}
+
+.multiselect--active {
+    z-index: 1000 !important;
+}
+
+.el-popover__reference-wrapper {}
+
+.el-transfer-panel__filter {
+    margin: 0 !important;
+}
+
+.el-descriptions {
+    .el-descriptions-item__label {
+        //width: 200px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 15px 0 15px 24px !important;
+        text-align: left;
+        color: #313442;
+        border-color: #EBEEF5 !important;
+        background-color: #F0F2F5 !important;
+    }
+    .el-descriptions-item__content {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        color: #131416;
+        border-color: #EBEEF5 !important;
+    }
+}
+
+.el-divider.el-divider--horizontal {
+    background-color: #E6E9F0;
+}
+
+.el-divider__text.is-left {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    padding: 0;
+    text-align: right;
+    color: #78838C;
+}
+
+.el-form-item--small .el-form-item__label {
+    line-height: 33px;
+}
+
+.el-dropdown-menu {
+    padding: 4px 0;
+}
+
+.el-empty {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.el-tabs__nav-wrap::after {
+    height: 1px !important;
+    background: #E9EBF2 !important;
+}
+
+.el-table__body-wrapper .el-table__cell {
+    padding: 15px 0;
+}
+
+.el-table__fixed-body-wrapper .el-table__cell {
+    padding: 15px 0;
+}
+
+.el-button--text {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/*.el-submenu__title {
+    background-color: #FFF !important;
+}
+
+.el-menu-item.is-active.submenu-title-noDropdown {
+    background-color: #FFF !important;
+}
+
+.router-link-exact-active,
+.sidebar-container a {
+    text-decoration: none !important;
+}*/
+
+.el-button--small {
+    font-size: 14px;
+    line-height: 12px;
+}
